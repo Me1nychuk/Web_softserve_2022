@@ -1,0 +1,52 @@
+body
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+code 
+{
+    background-color: rgb(206, 203, 203);
+    color: brown; 
+    font-size: 1em;
+    
+}
+
+div
+{
+    background-color: rgb(206, 203, 203);
+    box-sizing: content-box;
+    width: 400px;
+    
+
+}
+
+h1,h2
+{
+    text-align: center;
+
+}
+h1
+{
+    font-size: 3em;
+}
+h2
+{
+    font-size: 2em;
+}
+p
+{
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+span
+{
+    background-color: rgb(206, 203, 203);
+    color: rgb(19, 114, 19);
+}
+
+.text
+{
+    color:black;
+}
