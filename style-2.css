@@ -24,7 +24,7 @@ ol.tabl-1 li
 
 }
 
-ol.tabl-1
+ol.tabl-1 
 {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -32,9 +32,8 @@ ol.tabl-1
     color:white;
 }
 
-ul
+.tabl1
 {
-    list-style-type: disc;
-   
+    list-style-type: square;
 }
 
