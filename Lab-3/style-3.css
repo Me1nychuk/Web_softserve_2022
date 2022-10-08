@@ -1,0 +1,93 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 16px;
+	padding: 16px;
+}
+
+table {
+	font-size: 22px;
+	width: 65%;
+	height: 80%;
+}
+
+table,
+th,
+tr,
+td {
+	border-collapse: collapse;
+	border: 1px solid gray;
+}
+
+td {
+	padding-left: 10x;
+	text-align: center;
+}
+
+th {
+	font-size: 22px;
+}
+
+.period
+{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 10px;
+	font-style: italic;
+
+}
+
+.period1
+{
+	text-align: left;
+	word-wrap: inherit;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 7px;
+}
+
+.lightyellow {
+	background-color: #ffee99;
+}
+
+.lightblue {
+	background-color: #ccccff;
+}
+
+.lightred {
+	background-color: #ffbbbb;
+}
+
+.mint {
+	background-color: #aaffcc;
+}
+
+.purple {
+	background-color: #ffbbff;
+}
+
+.v {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight:bolder;
+}
+
+.aspect {
+	width: 9%;
+}
+
+.simple {
+	height: 70px;
+	width: 18%;
+}
+
+.progressive {
+	width: 19%;
+}
+
+.perfect {
+	width: 17%
+}
+
+.perfect_progressive {
+	width: 17%
+}
