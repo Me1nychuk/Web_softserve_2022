@@ -1,0 +1,44 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 16px;
+	padding: 16px;
+}
+
+table
+{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 0px; 
+    background-color: white;
+}
+
+.col-1,thead
+{
+    background-color: rgb(135, 206, 236);
+}
+
+thead 
+{
+    position: sticky;
+    top: 0;
+    min-height: 2em;
+    
+}
+
+th, td
+{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #ada7a7;
+}
+
+tbody tr th 
+{background-color: rgb(135, 206, 236);}
+

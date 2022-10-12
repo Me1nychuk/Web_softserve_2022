@@ -1,0 +1,31 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+	margin: 0px;
+    text-align: center;
+}
+
+div
+{height:100%;
+    width: 10%;
+    background-color: antiquewhite;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+}
+
+img
+{
+    width: 50%;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+section
+{
+    width: 90%;
+    margin-left: 10%;
+}
