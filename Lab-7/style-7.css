@@ -1,0 +1,109 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	
+margin-top: 200px;
+    text-align: center;
+    font-weight:700;
+}
+
+div{
+    width: 100px;
+    height: 400px;
+    
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+   
+       
+}
+#main div{
+    width: 250px;
+    height: 400px;
+    display: inline-block;
+    padding-top: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+        background: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    -webkit-transition: all 0.6s ease-out;
+
+}
+
+#col-1 hr , #col-1 button
+{
+    
+   
+    background-color:  #c63755;
+    
+}
+#col-2  hr , #col-2 button
+{
+   
+    
+    background-color:  #d08f42;
+   
+}
+#col-3 hr , #col-3 button
+{
+    
+   
+    background-color:  #2c6689;
+
+}
+#col-4  hr , #col-4 button
+{
+    
+
+    background-color:  #64ba35;
+   
+}
+
+button
+{
+    padding: 5px 15px 5px 15px ;
+   height: 30px;
+   border: none; 
+   color:  white;
+   margin-top: 20px;
+}
+hr{
+    height: 3px;
+    border: none; 
+}
+.price
+{ font-size: 40px;
+
+margin-bottom: 5px;
+margin-top: 10px;
+}
+.gray
+{
+    margin-top: 0px;
+    padding-top: 0px;
+    color:gray;
+}
+
+#main div:hover
+{
+    
+    -webkit-transform: scale(1.2);
+    
+    
+       
+}
+
+button:hover
+{
+    opacity: 0.6;
+}
+
+button:active
+{
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
