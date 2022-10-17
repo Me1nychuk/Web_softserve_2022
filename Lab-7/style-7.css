@@ -68,6 +68,7 @@ button
    border: none; 
    color:  white;
    margin-top: 20px;
+   text-transform: uppercase;
 }
 hr{
     height: 3px;
@@ -81,6 +82,7 @@ margin-top: 10px;
 }
 .gray
 {
+    margin-bottom: 25px;
     margin-top: 0px;
     padding-top: 0px;
     color:gray;
