@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style-12.css"/>
+
+</head>
+<body>
+    <input type="button" value="1.1" onclick="first1()">
+        <script>
+            function first1() {
+            let age = prompt('Вкажіть свою дату народження');
+
+            alert("Ваш вік = " + (2022-age))
+            }
+        </script>
+
+
+
+    <input type="button" value="1.2" onclick="first2()">
+        <script>
+            function first2() 
+        {
+                let count = prompt("Вкажіть об'єм флешки" );
+        alert(" Ківлькість файлів які помістяться рівні " + (count*1024)/820);
+        }
+        </script>
+
+    <input type="button" value="2.1" onclick="second1()">
+        <script>
+            function second1() 
+            {
+                let sw = prompt('Вкажіть номер спец символа 0-9');
+
+                switch (sw) {
+                    case '0':
+                        alert("!");
+                        break;
+                    case '1':
+                        alert("@");
+                    break;
+                case '2':
+                    alert("#");
+                        break;
+                    case '3':
+                        alert("$");
+                    break;
+                case '4':
+                    alert("%");
+                        break;
+                    case '5':
+                        alert("^");
+                    break;
+                    case '6':
+                        alert("&");  
+                        break;
+                    case '7':
+                        alert("*");
+                    break;
+                case '8':
+                    alert("=");
+                        break;
+                    case '9':
+                        alert("№");
+                    break;
+                    default:
+                        alert("Ви не ввели число 0-9(");
+                        break;
+                } 
+            }
+        </script>
+
+    <input type="button" value="2.2" onclick="second2()">
+        <script>
+            function second2() 
+            {
+                let IF = prompt("Вкажіть рік");
+
+                if (IF%400==0 || IF%4==0 && IF%100!=0) {
+
+                alert("РІк високосний");
+        
+                }
+                else
+                {
+                alert("РІк  не високосний");
+                }
+            }
+        </script>
+
+
+    <input type="button" value="2.3" onclick="third1()">
+        <script>
+            function third1() {
+                let day = prompt("Вкажіть день");
+                let month = prompt("Вкажіть місяць");
+                let year = prompt("Вкажіть рік");
+
+            var D = new Date(year,month,day);
+            D.setDate(D.getDate() + 1);
+            alert(D);
+            }
+        </script>
+
+    <input type="button" value="3.1" onclick="third1()">
+        <script>
+            function third1()
+            {
+                let start = prompt("Введіть початок інтервалу");
+                let finish = prompt("Введіть кінець інтервалу");
+                let sum = 0.00;
+                let index;
+                while (start <= finish) {
+                  
+                    index = start/1*1;
+                    sum= (sum + index);
+                    start++
+                }
+                alert(sum);
+            }
+
+        </script>
+
+    <input type="button" value="3.2" onclick="third2()">
+         <script>
+            function third2()
+            {
+                let numbers = prompt('Введіть');
+                // var indexx= 0;
+                // do
+                // {                              
+                //     numbers = numbers / 10;
+                //     indexx+=1;
+                // }  while (check/10>0)     
+               // alert("Кількість чисел " +  index);
+               let numberOfDigits = numbers => numbers.toString().length;
+                alert("Кількість чисел " +  numbers.length);
+            }
+        </script>
+
+    <input type="button" value="3.3" onclick="third3()">
+        <script>
+           function third3()
+           {
+                let minus = 0;
+                let plus = 0;
+                let nul = 0;
+                let par = 0;
+                let npar = 0;
+                let num = 0;
+
+                for (let index = 0; index < 10; index++)
+                 {
+                    num = prompt('Введіть число №' + (index+1));
+                    (num>0)? plus++ : (num<0) ? minus++ : nul++;
+                    (num==0)?par++ : (num%2==0)? par++ : npar++;
+                 }
+
+                 alert("Кількість мінусових: "+ minus + " | Плюсових: "+ plus +" | Нулів: "+ nul +" | Парних: " + par + " | Непарних: " + npar)
+           }
+        </script>
+     <input type="button" value="3.4" onclick="third4()">
+        <script>
+            function third4()
+                {
+                    const days = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', 'П*ятниця', 'Субота', 'Неділя'];
+                    let currDay = 0;
+
+                    while (confirm(`${days[currDay]}. Хотите побачити наступний день?`))
+                     {
+                    currDay = (currDay + 1) % days.length;
+                     }
+                }
+        </script>
+
+
+</body>
+</html>
