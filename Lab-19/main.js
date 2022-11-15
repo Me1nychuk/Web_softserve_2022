@@ -27,7 +27,7 @@ const tableBody = document.getElementById('table-body');
 
 function addOrder(order) {
     tableBody.innerHTML += `
-        <tr class="table-dark align-middle">
+        <tr class="table-dark align-middle " id="${order.id+search}">
             <th scope="row">${order.id}</th>
             <td>${order.namee}</td>
             <td>${order.count}</td>
@@ -44,4 +44,23 @@ clearbut.onclick = () =>
 {
     tableBody.innerHTML = "";
 };
+/*
+const searchBox = document.getElementById("search");
 
+
+let onin = searchBox.oninput = () => {
+    if (searchBox.value != "")
+    {
+        for (let index = 0; index < orders.length; index++) {
+            if (orders.name!=searchBox.value)
+            {
+                let ch = order.id+search;
+                const check = document.getElementById(ch);
+                check.style.visibility = "hidden";    
+            }
+            
+        }
+             
+    }
+
+}*/
