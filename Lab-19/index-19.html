@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <form>
+            
+                <h2 class="text-center">Order Form</h2>
+
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="name-input" class="form-label mt-4">Сar brand</label>
+                        <input type="text" class="form-control" id="name-input" placeholder="Enter brand">
+                    </div>
+                    <div class="form-group col">
+                        <label for="price-input" class="form-label mt-4">Count</label>
+                        <input type="number" min="1" class="form-control" id="price-input" placeholder="Enter count">
+                    </div>
+                    <div class="form-group col">
+                        <label for="email-input" class="form-label mt-4">Email</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="Enter email">
+                    </div>
+                </div>
+
+                <button id="order-submit" type="submit" class="btn btn-primary my-4">Make Order</button>
+            
+        </form>
+
+        <h2 class="mt-4 text-center">My Orders</h2>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Car brand</th>
+                    <th scope="col">The number of cars</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+                
+            </tbody>
+        </table>
+
+        <button id="clear-but">Clear</button>
+    </div>
+
+    <script src="./main.js"></script>
+
+
+</body>
+</html>
