@@ -64,3 +64,27 @@ let onin = searchBox.oninput = () => {
     }
 
 }*/
+
+
+let onin = searchBox.oninput = () => {
+    if (searchBox.value != "")
+    {
+        counter = 0;
+        for (let index = 4; index < tableBody.children.length; index++) {
+            if (!(tableBody.children[index].innerText.toLowerCase().startsWith(searchBox.value.toLowerCase())) && counter == 0)
+            {
+                tableBody.children[index].style.visibility = "hidden";
+            } else if (counter != 0){
+                counter--;
+            } else
+            {
+                counter = 3;
+            }
+        }
+    }
+    else {
+        for (let index = 4; index < tableBody.children.length; index++) {
+            tableBody.children[index].style.visibility = "visible";
+        }
+    }
+}
